@@ -1,0 +1,135 @@
+body, button, input, select, textarea {
+    font-family: AkzidenzGroteskBE,sans-serif;
+}
+
+/* navbar */
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 300 !important;
+    font-size: 18px;
+}
+
+a.nav-link.mr-3.font-weight-bold {
+    font-weight: 900 !important;
+}
+
+#main-logo{
+    width: 40%;
+    height: 47%;
+    height: 99%;
+    ansform: translate3d(0px, 0px, 0px);
+    content-visibility: visible;
+}
+
+.font-weight-bold{
+    font-weight: bolder;
+}
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #363636;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 30px;
+    padding: 2px;
+    position: relative;
+    transition: background-color .3s ease-in-out;
+    width: 58px;
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 26px;
+    /* left: 29px; */
+    position: absolute;
+    top: 2px;
+    transition: left .3s ease-in-out;
+    width: 26px
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.dark-toggle__moon{
+    right: 9px;
+    width: 11px;
+    height: 16px;
+    position: absolute;
+    top: 7px
+}
+
+.dark-toggle__sun {
+    background-color: red;
+    border-radius: 50%;
+    left: 7px;
+    width: 16px;    
+}
+
+nav.navbar.navbar-expand-lg.navbar-light {
+    align-items: center;
+    background-color: transparent;
+    display: flex;
+    height: 8.889rem;
+    justify-content: space-between;
+    left: 0;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    transform: translateY(0) translateZ(0);
+    transition: transform .4s ease-out,background-color .2s ease-in-out,height .3s ease-out;
+    width: 100%;
+    z-index: 20;
+}
+
+/* body */
+#media-section{
+    height:100vh;
+    width:100%;
+    
+}
+
+#media-section video{
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      z-index:5;
+      object-fit:cover;
+      font-family:'object-fit: cover';
+      /* repeat fixed */
+}
+
+.dark-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+.body-section{
+    position:relative;
+    z-index:20;
+}
+
+.body-sec{
+    align-items: center;
+    /* color: #fff; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 33vh;
+    padding-top: var(--screen-height);
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
